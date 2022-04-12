@@ -18,16 +18,14 @@
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	background-color: white;
+	border: 0px;
 }
 
 .exit:hover {
 	background-color: red;
 }
 
-.exitImage {
-	width: 60%;
-	height: 60%;
-}
 
 .Main {
 	width: 100%;
@@ -72,7 +70,6 @@ th {
 .btn {
 	width: 130px;
 	height: 130px;
-	background-color: red;
 }
 
 
