@@ -31,12 +31,9 @@ exit.addEventListener("click", () => {
 
 btns.forEach(btn => {
     btn.addEventListener("click", () => {
-        if(btn.innerHTML != "") 
-            alert("Hatalı seçim!");
-        else {
-            btn.innerHTML = nextChar.innerHTML;
-            checkWinner();
-        }
+        btn.innerHTML = nextChar.innerHTML;
+        btn.disabled = true;
+        checkWinner();
     })
 })
 
@@ -61,6 +58,7 @@ function checkWinner() {
 restartButton.addEventListener("click", () => {
     btns.forEach(btn => {
         btn.innerHTML = "";
+        btn.disabled = false;
     });
     nextChar.innerHTML = "X";
 })
